@@ -2,7 +2,7 @@ import { Hero } from "./Hero"
 import { Navbar } from "./Navbar"
 import { Marquee } from "./Marquee"
 import { Projects } from "./Projects"
-import { Dribbble } from "./Dribbble"
+import { Behance } from "./Behance"
 import { Skills } from "./Skills"
 import { Services } from "./Services"
 import { EmailMe } from "./EmailMe"
@@ -13,7 +13,7 @@ export const HomeModule = {
   Navbar,
   Marquee,
   Projects,
-  Dribbble,
+  Behance,
   Skills,
   Services,
   EmailMe,

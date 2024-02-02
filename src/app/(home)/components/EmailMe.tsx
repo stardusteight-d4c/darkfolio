@@ -1,6 +1,6 @@
 export function EmailMe() {
   return (
-    <section className="py-[100px]">
+    <section id="contact" className="py-[100px]">
       <div className="max-w-[1032px] text-center lg:text-start px-4 lg:px-0 mx-auto">
         <span className="text-transparent bg-gradient-to-l from-[#f7ff00] to-[#ff00cc] bg-clip-text font-medium text-xl font-poppins !tracking-[-0.3px]">
           Lets collab
@@ -9,7 +9,7 @@ export function EmailMe() {
           Got a project? Lets talk
         </span>
         <a
-          href="mailto:contato@exemplo.com"
+          href="mailto:fernandasenactt@gmail.com"
           className="cursor-pointer group mx-auto md:mt-3 lg:mt-0 lg:mx-0 w-fit flex flex-col md:flex-row items-center gap-x-2 text-[32px] md:text-[48px] !leading-[52.8px] !tracking-[-1px] font-semibold"
         >
           <span className="group-hover:text-transparent group-hover:bg-gradient-to-l group-hover:from-[#f7ff00] group-hover:to-[#ff00cc] group-hover:bg-clip-text">

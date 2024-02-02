@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export function Hero() {
   return (
     <section className="pb-[100px] pt-[200px] px-4 relative h-fit overflow-hidden">
@@ -31,15 +33,16 @@ export function Hero() {
           &nbsp;brands, and experience.
         </h1>
         <p className="text-lg mt-[20px] w-full max-w-[350px] sm:max-w-[580px] mx-auto !leading-[28.8px] text-[#a1a3bb] text-center">
-          I'm a Graphic designer based in Brazil, I specialize in UI/UX Design,
-          Responsive Web Design, and Visual Development.
+          I am a graphic designer from Brazil, focused on visual identities for
+          brands and audiovisual media.
         </p>
-        <button
-          type="button"
-          className="hover:scale-105 text-black z-50 relative bg-gradient-to-b from-[#f7ff00] to-[#ff00cc]  transition-all duration-300 rounded-full w-fit block py-3 px-8 active:scale-100 outline-none mx-auto mt-[40px]"
+        <Link
+          href="https://www.linkedin.com/in/fercsena/"
+          target="_blank"
+          className="hover:scale-105 text-black z-50 cursor-pointer relative bg-gradient-to-b from-[#f7ff00] to-[#ff00cc] transition-all duration-300 rounded-full w-fit block py-3 px-8 active:scale-100 outline-none mx-auto mt-[40px]"
         >
           <strong>GET IN TOUCH</strong>
-        </button>
+        </Link>
       </div>
     </section>
   )

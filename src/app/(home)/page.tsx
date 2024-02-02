@@ -7,7 +7,7 @@ export default function Home() {
         <HomeModule.Hero />
         <HomeModule.Marquee />
         <HomeModule.Projects />
-        <HomeModule.Dribbble />
+        <HomeModule.Behance />
         <HomeModule.Skills />
         <HomeModule.Services />
         <HomeModule.EmailMe />
