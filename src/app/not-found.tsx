@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function Custom404() {
+export default function NotFound() {
   return (
     <div className="w-screen h-screen">
       <div className="grid place-items-center items-center h-full">
