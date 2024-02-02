@@ -60,7 +60,7 @@ body {
   transition: 0.5s;
 }
 #stars::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -50%;
@@ -121,4 +121,3 @@ body {
   transform: scale(1);
   bottom: 25px;
 }
-

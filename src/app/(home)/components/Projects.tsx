@@ -1,18 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react'
-import anime from 'animejs'
-import {
-  jordan,
-  arca,
-  sushiRestaurant,
-  twentyOnePilots,
-  staart,
-  finbook,
-  mba,
-  finalgirl,
-  hellfire,
-} from '../assets'
+"use client"
 
-export default function Projects() {
+import React, { useEffect, useRef, useState } from "react"
+import anime from "animejs"
+
+export function Projects() {
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => setMounted(true), [])
@@ -30,7 +21,7 @@ export default function Projects() {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            if (entry.target.id === 'projects') {
+            if (entry.target.id === "projects") {
               anime({
                 targets: `#${entry.target.id}`,
                 translateY: [100, 0],
@@ -53,35 +44,8 @@ export default function Projects() {
     >
       <div className="md:grid max-w-[1200px] flex flex-col grid-cols-2 gap-8 w-fit mx-auto">
         <div className="card-animate card border-[3px] border-white/10 overflow-hidden transition-all duration-500 cursor-pointer w-full max-w-[500px] h-[500px] group col-span-1 relative">
-          <img src={jordan.src} alt="" className="w-full h-full object-cover" />
-          <b className="inset-x-0 transition-all bg-gradient-to-t from-[#020202]/90 to-transparent bottom-0 h-[100px] hidden group-hover:block"></b>
-          <div className="content">
-            <div className="title px-4 text-center">
-              <span className="font-semibold text-2xl uppercase">Jordan</span>
-              <br />
-              <span className="font-medium tracking-widest uppercase text-lg">
-                Illustration and Composition
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div className="card-animate card border-[3px] border-white/10 overflow-hidden transition-all duration-500 cursor-pointer w-full max-w-[500px] h-[500px] group col-span-1 relative">
-          <img src={arca.src} alt="" className="w-full h-full object-cover" />
-          <b className="inset-x-0 transition-all bg-gradient-to-t from-[#020202]/90 to-transparent bottom-0 h-[100px] hidden group-hover:block"></b>
-          <div className="content">
-            <div className="title px-4 text-center">
-              <span className="font-semibold text-2xl uppercase">Jordan</span>
-              <br />
-              <span className="font-medium tracking-widest uppercase text-lg">
-                Illustration and Composition
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="card-animate card border-[3px] border-white/10 overflow-hidden transition-all duration-500 cursor-pointer w-full max-w-[500px] h-[500px] group col-span-1 relative">
           <img
-            src={sushiRestaurant.src}
+            src="assets/jordan.png"
             alt=""
             className="w-full h-full object-cover"
           />
@@ -99,7 +63,42 @@ export default function Projects() {
 
         <div className="card-animate card border-[3px] border-white/10 overflow-hidden transition-all duration-500 cursor-pointer w-full max-w-[500px] h-[500px] group col-span-1 relative">
           <img
-            src={twentyOnePilots.src}
+            src="assets/arca.png"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+          <b className="inset-x-0 transition-all bg-gradient-to-t from-[#020202]/90 to-transparent bottom-0 h-[100px] hidden group-hover:block"></b>
+          <div className="content">
+            <div className="title px-4 text-center">
+              <span className="font-semibold text-2xl uppercase">Jordan</span>
+              <br />
+              <span className="font-medium tracking-widest uppercase text-lg">
+                Illustration and Composition
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="card-animate card border-[3px] border-white/10 overflow-hidden transition-all duration-500 cursor-pointer w-full max-w-[500px] h-[500px] group col-span-1 relative">
+          <img
+            src="assets/sushi-restaurant.png"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+          <b className="inset-x-0 transition-all bg-gradient-to-t from-[#020202]/90 to-transparent bottom-0 h-[100px] hidden group-hover:block"></b>
+          <div className="content">
+            <div className="title px-4 text-center">
+              <span className="font-semibold text-2xl uppercase">Jordan</span>
+              <br />
+              <span className="font-medium tracking-widest uppercase text-lg">
+                Illustration and Composition
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div className="card-animate card border-[3px] border-white/10 overflow-hidden transition-all duration-500 cursor-pointer w-full max-w-[500px] h-[500px] group col-span-1 relative">
+          <img
+            src="assets/21pilots.png"
             alt=""
             className="w-full h-full object-cover"
           />
@@ -116,22 +115,8 @@ export default function Projects() {
         </div>
 
         <div className="card-animate card border-[3px] border-white/10 overflow-hidden transition-all duration-500 cursor-pointer w-full max-w-[1032px] h-[250px] group col-span-2 relative">
-          <img src={staart.src} alt="" className="w-full h-full object-cover" />
-          <b className="inset-x-0 transition-all bg-gradient-to-t from-[#020202]/90 to-transparent bottom-0 h-[100px] hidden group-hover:block"></b>
-          <div className="content">
-            <div className="title px-4 text-center">
-              <span className="font-semibold text-2xl uppercase">Staart</span>
-              <br />
-              <span className="font-medium tracking-widest uppercase text-lg">
-                Visual Identity
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div className="card-animate card border-[3px] border-white/10 overflow-hidden transition-all duration-500 cursor-pointer w-full max-w-[500px] h-[500px] group col-span-1 relative">
           <img
-            src={hellfire.src}
+            src="assets/staart.gif"
             alt=""
             className="w-full h-full object-cover"
           />
@@ -146,23 +131,10 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="card-animate card border-[3px] border-white/10 overflow-hidden transition-all duration-500 cursor-pointer w-full max-w-[500px] h-[500px] group col-span-1 relative">
-          <img src={mba.src} alt="" className="w-full h-full object-cover" />
-          <b className="inset-x-0 transition-all bg-gradient-to-t from-[#020202]/90 to-transparent bottom-0 h-[100px] hidden group-hover:block"></b>
-          <div className="content">
-            <div className="title px-4 text-center">
-              <span className="font-semibold text-2xl uppercase">Staart</span>
-              <br />
-              <span className="font-medium tracking-widest uppercase text-lg">
-                Visual Identity
-              </span>
-            </div>
-          </div>
-        </div>
 
         <div className="card-animate card border-[3px] border-white/10 overflow-hidden transition-all duration-500 cursor-pointer w-full max-w-[500px] h-[500px] group col-span-1 relative">
           <img
-            src={finbook.src}
+            src="assets/hellfire.png"
             alt=""
             className="w-full h-full object-cover"
           />
@@ -179,7 +151,42 @@ export default function Projects() {
         </div>
         <div className="card-animate card border-[3px] border-white/10 overflow-hidden transition-all duration-500 cursor-pointer w-full max-w-[500px] h-[500px] group col-span-1 relative">
           <img
-            src={finalgirl.src}
+            src="assets/mba.png"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+          <b className="inset-x-0 transition-all bg-gradient-to-t from-[#020202]/90 to-transparent bottom-0 h-[100px] hidden group-hover:block"></b>
+          <div className="content">
+            <div className="title px-4 text-center">
+              <span className="font-semibold text-2xl uppercase">Staart</span>
+              <br />
+              <span className="font-medium tracking-widest uppercase text-lg">
+                Visual Identity
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div className="card-animate card border-[3px] border-white/10 overflow-hidden transition-all duration-500 cursor-pointer w-full max-w-[500px] h-[500px] group col-span-1 relative">
+          <img
+            src="assets/finbook.png"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+          <b className="inset-x-0 transition-all bg-gradient-to-t from-[#020202]/90 to-transparent bottom-0 h-[100px] hidden group-hover:block"></b>
+          <div className="content">
+            <div className="title px-4 text-center">
+              <span className="font-semibold text-2xl uppercase">Staart</span>
+              <br />
+              <span className="font-medium tracking-widest uppercase text-lg">
+                Visual Identity
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="card-animate card border-[3px] border-white/10 overflow-hidden transition-all duration-500 cursor-pointer w-full max-w-[500px] h-[500px] group col-span-1 relative">
+          <img
+            src="assets/finalgirl.png"
             alt=""
             className="w-full h-full object-cover"
           />

@@ -1,4 +1,4 @@
-export default function Footer() {
+export function Footer() {
   return (
     <footer className="pt-20 pb-4">
       <div className="max-w-[1032px] px-4 lg:px-0 mx-auto">

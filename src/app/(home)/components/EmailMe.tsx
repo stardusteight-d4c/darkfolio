@@ -1,4 +1,4 @@
-export default function EmailMe() {
+export function EmailMe() {
   return (
     <section className="py-[100px]">
       <div className="max-w-[1032px] text-center lg:text-start px-4 lg:px-0 mx-auto">
@@ -14,7 +14,7 @@ export default function EmailMe() {
         >
           <span className="group-hover:text-transparent group-hover:bg-gradient-to-l group-hover:from-[#f7ff00] group-hover:to-[#ff00cc] group-hover:bg-clip-text">
             Email me
-          </span>{' '}
+          </span>{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 256 256"

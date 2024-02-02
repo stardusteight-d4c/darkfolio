@@ -1,5 +1,3 @@
-import React from 'react'
-
 interface Props {
   emoji: string
   title: string
@@ -9,7 +7,11 @@ interface Props {
 
 export default function ServiceCard(props: Props) {
   return (
-    <div className={`${props.index % 2 === 0 && 'mdd:mt-20'} bg-[#1c1924]/50 max-w-[300px] h-[250px] text-left w-full flex items-start justify-center flex-col px-[20px] rounded-3xl`}>
+    <div
+      className={`${
+        props.index % 2 === 0 && "mdd:mt-20"
+      } bg-[#1c1924]/50 max-w-[300px] h-[250px] text-left w-full flex items-start justify-center flex-col px-[20px] rounded-3xl`}
+    >
       <img
         src={props.emoji}
         alt=""

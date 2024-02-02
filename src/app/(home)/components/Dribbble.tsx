@@ -1,4 +1,4 @@
-export default function Dribbble() {
+export function Dribbble() {
   return (
     <section className="pb-[100px]">
       <div className="max-w-[1200px] mx-auto">

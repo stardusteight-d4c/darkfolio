@@ -1,6 +1,4 @@
-import fernanda from '../assets/fernanda.png'
-
-export default function Hero() {
+export function Hero() {
   return (
     <section className="pb-[100px] pt-[200px] px-4 relative h-fit overflow-hidden">
       <div id="container-stars" className="inset-0 pointer-events-none">
@@ -20,7 +18,7 @@ export default function Hero() {
               <div className="spinner1" />
             </div>
             <img
-              src={fernanda.src}
+              src="assets/fernanda.png"
               className="absolute top-1 w-[100px] h-[100px] rounded-full object-fill"
             />
           </div>

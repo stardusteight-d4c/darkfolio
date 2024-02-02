@@ -1,19 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/modules/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/shared/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     screens: {
       // => @media (min-width: 640px) { ... }
-      sm: '640px',
-      md: '768px',
-      mdd: '950px',
-      lg: '1024px',
-      xl: '1280px',
-      '2xl': '1536px',
+      sm: "640px",
+      md: "768px",
+      mdd: "950px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
     },
     fontFamily: {
-      inter: 'Inter, sans-serif',
-      poppins: 'Poppins, sans-serif',
+      inter: "Inter, sans-serif",
+      poppins: "Poppins, sans-serif",
     },
     extend: {},
   },
