@@ -1,5 +1,6 @@
 import { cardServiceData } from "@/shared/utils/data"
-import ServiceCard from "./integrate/ServiceCard"
+
+import { ServiceCard } from "./integrate/ServiceCard"
 
 export function Services() {
   return (

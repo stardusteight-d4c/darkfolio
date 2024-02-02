@@ -5,7 +5,7 @@ interface Props {
   index: number
 }
 
-export default function ServiceCard(props: Props) {
+export function ServiceCard(props: Props) {
   return (
     <div
       className={`${
