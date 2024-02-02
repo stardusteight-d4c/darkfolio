@@ -6,6 +6,7 @@ import anime from "animejs"
 import { cardProjectData } from "@/shared/utils/data"
 
 import { ProjectCard } from "./integrate/ProjectCard"
+import Link from "next/link"
 
 export function Projects() {
   const [mounted, setMounted] = useState(false)
@@ -50,7 +51,11 @@ export function Projects() {
         {cardProjectData.slice(0, 4).map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
-        <div className="card-animate card border-[3px] border-white/10 overflow-hidden transition-all duration-500 cursor-pointer w-full max-w-[1032px] h-[250px] group col-span-2 relative">
+        <Link
+          href="https://www.behance.net/gallery/167287515/Staart-Visual-Identity"
+          target="_blank"
+          className="card-animate card border-[3px] border-white/10 overflow-hidden transition-all duration-500 cursor-pointer w-full max-w-[1032px] h-[250px] group col-span-2 relative"
+        >
           <img
             src="assets/staart.gif"
             alt="cover/img"
@@ -66,7 +71,7 @@ export function Projects() {
               </span>
             </div>
           </div>
-        </div>
+        </Link>
         {cardProjectData.slice(4, 8).map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
